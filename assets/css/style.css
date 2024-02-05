@@ -1,18 +1,19 @@
 body, html {
-    height: 100%;
-    margin: 0;
-    background-color: #fff;
-    background-image: url('herzen-hintergrund.jpg'); /* Pfad zu deinem Hintergrundbild mit den roten Herzen */
-    background-size: cover;
-    background-position: center;
+    height: 100%; /* Erlaubt es dem .centered-content, sich auf die gesamte Höhe zu erstrecken */
+    margin: 0; /* Entfernt den Standard-Margin */
+    background-color: #fff; /* Standard-Hintergrundfarbe, kann geändert werden */
+    background-image: url('herzen-hintergrund.jpg'); /* Pfad zu deinem Hintergrundbild */
+    background-size: cover; /* Stellt sicher, dass der Hintergrund den ganzen Bildschirm bedeckt */
+    background-position: center; /* Zentriert das Hintergrundbild */
 }
 
 .centered-content {
+    width: 100%; /* Fügt hinzu, um die volle Breite zu nutzen */
     height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; /* Farbe des Textes */
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    align-items: center; /* Zentriert den Inhalt vertikal */
+    color: white; /* Farbe des Textes, kann angepasst werden */
     font-size: 2em; /* Größe des Textes */
-    font-family: Arial, sans-serif; /* Schriftart des Textes */
+    font-family: Arial, sans-serif; /* Schriftart */
 }
