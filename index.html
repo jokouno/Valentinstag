@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentinstagsdate</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <div class="centered-content">
@@ -28,42 +29,6 @@
         button.style.left = randomX + 'px';
         button.style.top = randomY + 'px';
     });
-
-    document.getElementById('yes-button').addEventListener('click', function() {
-        // Container für Bilder, könnte auch direkt im HTML definiert werden
-        var imagesContainer = document.createElement('div');
-        imagesContainer.id = 'images-container';
-        document.body.appendChild(imagesContainer);
-    
-        // Liste der Bild-URLs
-        var imageUrls = [
-            'assets/path/to/image1.jpg',
-            'assets/path/to/image2.jpg',
-            // Füge weitere Bild-URLs hier hinzu
-        ];
-
-        // Erstelle und füge jedes Bild zum Container hinzu
-        imageUrls.forEach(function(url) {
-            var img = document.createElement('img');
-            img.src = url;
-            img.style.width = '100px'; // Beispielgröße, anpassen nach Bedarf
-            img.style.height = 'auto';
-            img.style.margin = '10px';
-            imagesContainer.appendChild(img);
-        });
-    });
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.5/dist/canvas-confetti.min.js"></script>
-    <script>
-    document.getElementById('yes-button').addEventListener('click', function() {
-        // Konfetti-Regen starten
-        confetti({
-            particleCount: 100,
-            spread: 70,
-            origin: { y: 0.6 }
-        });
-    });
-    </script>
-
 </body>
 </html>
