@@ -1,19 +1,20 @@
-body, html {
-    height: 100%; /* Erlaubt es dem .centered-content, sich auf die gesamte Höhe zu erstrecken */
-    margin: 0; /* Entfernt den Standard-Margin */
-    background-color: #fff; /* Standard-Hintergrundfarbe, kann geändert werden */
-    background-image: url('../herzen-hintergrund.jpg'); /* Pfad zu deinem Hintergrundbild */
-    background-size: cover; /* Stellt sicher, dass der Hintergrund den ganzen Bildschirm bedeckt */
-    background-position: center; /* Zentriert das Hintergrundbild */
+.response-buttons {
+    margin-top: 20px; /* Fügt etwas Abstand zwischen Text und Buttons hinzu */
+    display: flex;
+    justify-content: center; /* Zentriert die Buttons unter dem Text */
+    gap: 10px; /* Fügt einen kleinen Abstand zwischen den Buttons hinzu */
 }
 
-.centered-content {
-    width: 100%; /* Fügt hinzu, um die volle Breite zu nutzen */
-    height: 100%;
-    display: flex;
-    justify-content: center; /* Zentriert den Inhalt horizontal */
-    align-items: center; /* Zentriert den Inhalt vertikal */
-    color: white; /* Farbe des Textes, kann angepasst werden */
-    font-size: 2em; /* Größe des Textes */
-    font-family: Arial, sans-serif; /* Schriftart */
+#yes-button, #no-button {
+    padding: 10px 20px; /* Vergrößert die Buttons für eine bessere Klickbarkeit */
+    font-size: 1em; /* Passt die Schriftgröße der Buttons an */
+    color: white; /* Textfarbe der Buttons */
+    background-color: #e74c3c; /* Hintergrundfarbe der Buttons */
+    border: none; /* Entfernt die Standard-Bordüre */
+    cursor: pointer; /* Ändert den Cursor beim Überfahren der Buttons */
+    border-radius: 5px; /* Fügt abgerundete Ecken hinzu */
+}
+
+#yes-button:hover, #no-button:hover {
+    background-color: #c0392b; /* Dunklere Hintergrundfarbe beim Darüberfahren */
 }
