@@ -12,7 +12,7 @@ body, html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modernere Schriftart */
 }
 
-.centered-content {
+.centered-content, .swiper-container {
     text-align: center; /* Stellt sicher, dass der Text zentriert ist */
     color: #444; /* Dunklere Textfarbe für bessere Lesbarkeit */
     padding: 20px;
@@ -20,6 +20,7 @@ body, html {
     border-radius: 15px; /* Abgerundete Ecken */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Leichter Schatten für Tiefe */
     max-width: 80%; /* Verhindert, dass der Container zu breit wird */
+    margin: auto;
 }
 
 .response-buttons {
@@ -51,4 +52,31 @@ body, html {
 
 #no-button:hover {
     background-color: #2980b9; /* Dunkleres Blau beim Hover */
+}
+
+/* Stile für Swiper Slider */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: auto;
+    max-height: 80vh; /* Passt die Höhe an, um innerhalb des Viewports zu bleiben */
+}
+
+.swiper-pagination-bullet {
+    background: #007bff;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: #0056b3;
 }
