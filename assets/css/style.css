@@ -1,20 +1,54 @@
-.response-buttons {
-    margin-top: 20px; /* Fügt etwas Abstand zwischen Text und Buttons hinzu */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: center; /* Zentriert die Buttons unter dem Text */
-    gap: 10px; /* Fügt einen kleinen Abstand zwischen den Buttons hinzu */
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2; /* Weicheres Hintergrundfarbe */
+    background-image: url('../herzen-hintergrund.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modernere Schriftart */
+}
+
+.centered-content {
+    text-align: center; /* Stellt sicher, dass der Text zentriert ist */
+    color: #444; /* Dunklere Textfarbe für bessere Lesbarkeit */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Leicht transparenter Hintergrund */
+    border-radius: 15px; /* Abgerundete Ecken */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Leichter Schatten für Tiefe */
+    max-width: 80%; /* Verhindert, dass der Container zu breit wird */
+}
+
+.response-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Größerer Abstand zwischen den Buttons */
 }
 
 #yes-button, #no-button {
-    padding: 10px 20px; /* Vergrößert die Buttons für eine bessere Klickbarkeit */
-    font-size: 1em; /* Passt die Schriftgröße der Buttons an */
-    color: white; /* Textfarbe der Buttons */
-    background-color: #e74c3c; /* Hintergrundfarbe der Buttons */
-    border: none; /* Entfernt die Standard-Bordüre */
-    cursor: pointer; /* Ändert den Cursor beim Überfahren der Buttons */
-    border-radius: 5px; /* Fügt abgerundete Ecken hinzu */
+    padding: 10px 30px; /* Größere Buttons */
+    font-weight: bold; /* Fetter Text */
+    color: #fff; /* Weiße Textfarbe */
+    background-color: #e74c3c; /* Einheitliche Hintergrundfarbe */
+    border: 2px solid transparent; /* Bereitet einen Hover-Effekt vor */
+    border-radius: 50px; /* Sehr abgerundete Ecken */
+    transition: background-color 0.3s, transform 0.2s; /* Sanfte Übergänge */
 }
 
 #yes-button:hover, #no-button:hover {
-    background-color: #c0392b; /* Dunklere Hintergrundfarbe beim Darüberfahren */
+    background-color: #c0392b;
+    transform: scale(1.1); /* Vergrößert den Button leicht beim Hover */
+    border-color: #fff; /* Fügt einen weißen Rand hinzu */
+}
+
+#no-button {
+    background-color: #3498db; /* Blaue Farbe für den "Nein"-Button */
+}
+
+#no-button:hover {
+    background-color: #2980b9; /* Dunkleres Blau beim Hover */
 }
