@@ -2,7 +2,7 @@ body, html {
     height: 100%; /* Erlaubt es dem .centered-content, sich auf die gesamte Höhe zu erstrecken */
     margin: 0; /* Entfernt den Standard-Margin */
     background-color: #fff; /* Standard-Hintergrundfarbe, kann geändert werden */
-    background-image: url("/assets/herzen-hintergrund.jpg"); /* Pfad zu deinem Hintergrundbild */
+    background-image: url('../herzen-hintergrund.jpg'); /* Pfad zu deinem Hintergrundbild */
     background-size: cover; /* Stellt sicher, dass der Hintergrund den ganzen Bildschirm bedeckt */
     background-position: center; /* Zentriert das Hintergrundbild */
 }
