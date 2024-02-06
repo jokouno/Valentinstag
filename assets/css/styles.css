@@ -40,7 +40,7 @@ body, html {
 }
 
 #yes-button:hover, #no-button:hover {
-    background-color: #c0392b;
+    background-color: #57257D;
     transform: scale(1.1); /* Vergrößert den Button leicht beim Hover */
     border-color: #fff; /* Fügt einen weißen Rand hinzu */
 }
@@ -50,5 +50,5 @@ body, html {
 }
 
 #no-button:hover {
-    background-color: #e74c3c; /* Dunkleres Blau beim Hover */
+    background-color: #861B10; /* Dunkleres Blau beim Hover */
 }
