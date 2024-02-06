@@ -34,7 +34,7 @@ body, html {
     padding: 10px 30px; /* Größere Buttons */
     font-weight: bold; /* Fetter Text */
     color: #fff; /* Weiße Textfarbe */
-    background-color: #e74c3c; /* Einheitliche Hintergrundfarbe */
+    background-color: #7030A0; /* Einheitliche Hintergrundfarbe */
     border: 2px solid transparent; /* Bereitet einen Hover-Effekt vor */
     border-radius: 50px; /* Sehr abgerundete Ecken */
     transition: background-color 0.3s, transform 0.2s; /* Sanfte Übergänge */
